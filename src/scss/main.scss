@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   background-color: #fcfcfc;
   font-family: Inter, sans-serif;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -42,7 +43,7 @@ nav {
   }
 
   a {
-    margin-left: 15px;
+    margin-left: 30px;
   }
   .resume {
     background-color: #01b3ff2e;
@@ -55,6 +56,7 @@ nav {
 
 .hero {
   height: 80vh;
+  padding-bottom: 60px;
   &__group {
     padding-top: 10%;
   }
@@ -113,9 +115,9 @@ span.color {
     position: relative;
     overflow: hidden;
 
-    &.cs0{
-        background-image: url(img/cs0.jpg);
-        background-position: bottom;
+    &.cs0 {
+      background-image: url(img/cs0.jpg);
+      background-position: bottom;
     }
 
     &::after {
@@ -145,8 +147,8 @@ span.color {
         margin-bottom: 10px;
         display: flex;
         text-transform: uppercase;
-        img{
-            filter: invert(1);
+        img {
+          filter: invert(1);
         }
       }
       p {
@@ -160,4 +162,54 @@ span.color {
 
 .p-100 {
   padding-top: 100px;
+}
+
+.about__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+    .me{
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            background-color: #01b3ff;
+            z-index: 4;
+            transform: rotate(45deg);
+            top: 0;
+            left: 0;
+        }
+    }
+
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    filter: grayscale(1);
+    
+  }
+  h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 150%;
+  }
+  ul {
+    list-style: none;
+    line-height: 200%;
+    margin-top: 30px;
+    li {
+      background-image: url(./img/check.svg);
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 30px;
+    }
+  }
 }
