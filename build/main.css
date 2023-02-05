@@ -9,21 +9,39 @@ a {
   color: #060606;
   cursor: pointer; }
 
+ul {
+  list-style: none; }
+  ul li {
+    background-image: url(./img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 30px;
+    color: #595959;
+    margin-bottom: 10px;
+    line-height: 150%; }
+
 body {
   font-size: 16px;
   background-color: #fcfcfc;
   font-family: Inter, sans-serif;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  color: #060606; }
+
+p {
+  color: #4f4f4f; }
+
+.text-center {
+  text-align: center; }
 
 .container {
   width: auto;
-  max-width: 1100px;
+  max-width: 1000px;
   padding: 0 15px;
   margin: auto; }
 
 h1 {
   color: #060606;
-  font-size: 80px;
+  font-size: 74px;
   line-height: 105%;
   font-weight: 700;
   letter-spacing: -3px;
@@ -45,10 +63,10 @@ nav {
     color: #003d72;
     border-radius: 3px; }
 
-.hero {
+.hero, .cs {
   height: 80vh;
   padding-bottom: 60px; }
-  .hero__group {
+  .hero__group, .cs__group {
     padding-top: 10%; }
 
 span.color {
@@ -63,6 +81,8 @@ span.color {
   justify-content: space-between;
   margin-top: 40px;
   align-items: center; }
+  .text-block p {
+    color: #4f4f4f; }
   .text-block a {
     display: flex;
     align-items: center;
@@ -113,16 +133,20 @@ span.color {
       z-index: 3;
       width: 100%;
       max-width: 70%; }
-      .cs-grid .cs-card .cs-group h2 {
+      .cs-grid .cs-card .cs-group a {
         margin-bottom: 10px;
         display: flex;
-        text-transform: uppercase; }
-        .cs-grid .cs-card .cs-group h2 img {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        color: #e7e5e5; }
+        .cs-grid .cs-card .cs-group a img {
           filter: invert(1); }
       .cs-grid .cs-card .cs-group p {
         line-height: 150%;
         font-weight: normal;
-        font-size: 14px; }
+        font-size: 14px;
+        color: #e7e5e5; }
 
 .p-100 {
   padding-top: 100px; }
@@ -145,6 +169,11 @@ span.color {
       transform: rotate(45deg);
       top: 0;
       left: 0; }
+  .about__group ul {
+    line-height: 150%;
+    margin-top: 30px; }
+    .about__group ul li {
+      line-height: normal; }
   .about__group img {
     width: 100%;
     max-width: 100%;
@@ -155,13 +184,100 @@ span.color {
     letter-spacing: -2px;
     margin-bottom: 20px; }
   .about__group p {
-    line-height: 150%; }
-  .about__group ul {
-    list-style: none;
-    line-height: 200%;
+    line-height: 150%;
+    font-size: 18px;
+    color: #595959; }
+
+.cs-bg {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: 400px; }
+
+.cs {
+  height: auto; }
+  .cs h1 {
+    color: #060606;
+    font-size: 64px;
+    line-height: 105%;
+    font-weight: 700;
+    letter-spacing: -2px;
     margin-top: 30px; }
-    .about__group ul li {
-      background-image: url(./img/check.svg);
-      background-repeat: no-repeat;
-      background-position: center left;
-      padding-left: 30px; }
+  .cs .text-block {
+    line-height: 150%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #535353;
+    margin-top: 20px; }
+
+.img-row {
+  padding: 60px 60px; }
+  .img-row img {
+    width: 100%;
+    max-width: 100%; }
+
+.ps {
+  margin-bottom: 30px; }
+  .ps p {
+    line-height: 150%;
+    font-size: 20px; }
+  .ps small {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #01b3ff; }
+
+.doc__row {
+  margin: 40px 0; }
+  .doc__row.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px; }
+  .doc__row p {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px; }
+  .doc__row small {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #01b3ff; }
+  .doc__row h2 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 30px; }
+
+.doc h2 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 15px; }
+
+.doc .tools li {
+  background-position: top 3px left; }
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .features small {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #01b3ff; }
+  .features .video {
+    padding-top: 40px; }
+  .features video {
+    width: 100%;
+    padding: 60px; }
+  .features .features-cnt {
+    padding-top: 150px; }
+    .features .features-cnt h2 {
+      font-size: 42px;
+      letter-spacing: -1px;
+      color: #060606;
+      margin-bottom: 15px; }
+    .features .features-cnt p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 150%; }
+    .features .features-cnt ul li {
+      font-size: 16px;
+      background-position: top 3px left; }
