@@ -358,8 +358,8 @@ span.color {
   padding-top: 60px;
 }
 
-.wireframes img {
-  width: 100%;
+.wireframes .img-row {
+  padding-top: 0px;
 }
 
 .clearfix {
